@@ -18,7 +18,7 @@
                     <ColumnDefinition Width="400"/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <TextBox x:Name="directory_text_box" Grid.Column="0" HorizontalAlignment="Left" Height="20" Text="TextBox" TextWrapping="NoWrap" VerticalAlignment="Center" Width="400" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="5,0,0,0" Grid.ColumnSpan="4"/>
+                <TextBox x:Name="directory_text_box" Grid.Column="0" HorizontalAlignment="Left" Height="20" Text="TextBox" TextWrapping="NoWrap" VerticalAlignment="Center" Width="400" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="5,0,0,0" Grid.ColumnSpan="4" LostFocus=" directory_text_box_LostForcus"/>
                 <Button x:Name="directory_select" Grid.Column="1" Content="参照" HorizontalAlignment="Left" Height="20" VerticalAlignment="Center" Width="50" Margin="10,0,0,0" Click="directory_select_Click"/>
 
             </Grid>
@@ -29,8 +29,8 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="generate_translation" Grid.Column="0" Content="翻訳データの生成" HorizontalAlignment="Left" Height="20" VerticalAlignment="Center" Width="120" IsEnabled="False"/>
-            <Button x:Name="remove_translation" Grid.Column="1" Content="翻訳データの削除" HorizontalAlignment="Center" Height="20" VerticalAlignment="Center" Width="120" IsEnabled="False"/>
+            <Button x:Name="generate_translation" Grid.Column="0" Content="翻訳データの生成" HorizontalAlignment="Left" Height="20" VerticalAlignment="Center" Width="120" IsEnabled="False" Click="generate_translation_Click"/>
+            <Button x:Name="remove_translation" Grid.Column="1" Content="翻訳データの削除" HorizontalAlignment="Center" Height="20" VerticalAlignment="Center" Width="120" IsEnabled="False" Click="remove_translation_Click"/>
             <Button x:Name="check_update" Grid.Column="2" Content="更新の確認" HorizontalAlignment="Right" Height="20" VerticalAlignment="Center" Width="120" Click="check_update_Click"/>
         </Grid>
         <Line X1="0" Y1="100" X2="495" Y2="100" Stroke="#FFC8C8C8" StrokeThickness="1"/>
@@ -39,7 +39,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Label Grid.Column="0" Content="最新バージョンです（v1.3.3）" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" VerticalContentAlignment="Center" Padding="0,0,0,0"/>
+            <Label x:Name="remote_version" Grid.Column="0" Content="最新バージョンです（v1.3.3）" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" VerticalContentAlignment="Center" Padding="0,0,0,0"/>
             <Label x:Name="local_version" Grid.Column="1" Content="インストール済バージョン：v1.3.3" HorizontalAlignment="Right" Height="20" VerticalAlignment="Top" VerticalContentAlignment="Center" Padding="0,0,0,0" HorizontalContentAlignment="Right"/>
         </Grid>
     </Grid>
