@@ -2,10 +2,10 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Stormworks_Japanese_translation_downloader.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="SelectDirectory" Roaming="true" Type="System.String" Scope="User">
+    <Setting Name="SelectDirectory" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="InstalledVersion" Roaming="true" Type="System.String" Scope="User">
+    <Setting Name="InstalledVersion" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
   </Settings>

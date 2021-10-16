@@ -26,7 +26,6 @@ namespace Stormworks_Japanese_translation_downloader.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        [global::System.Configuration.SettingsManageabilityAttribute(global::System.Configuration.SettingsManageability.Roaming)]
         public string SelectDirectory {
             get {
                 return ((string)(this["SelectDirectory"]));
@@ -39,7 +38,6 @@ namespace Stormworks_Japanese_translation_downloader.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        [global::System.Configuration.SettingsManageabilityAttribute(global::System.Configuration.SettingsManageability.Roaming)]
         public string InstalledVersion {
             get {
                 return ((string)(this["InstalledVersion"]));

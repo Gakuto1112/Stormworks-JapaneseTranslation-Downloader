@@ -6,6 +6,15 @@
     <RootNamespace>Stormworks_Japanese_translation_downloader</RootNamespace>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>icon.ico</ApplicationIcon>
+    <Authors>Gakuto1112</Authors>
+    <Product>Stormworks翻訳ダウンローダー</Product>
+    <RepositoryUrl>https://github.com/Gakuto1112/Stormworks-JapaneseTranslation-Downloader</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/Gakuto1112/Stormworks-JapaneseTranslation-Downloader</PackageProjectUrl>
+    <Description>Stormworksの日本語訳のデータを生成、更新するためのツールです。</Description>
+    <Copyright />
+    <NeutralLanguage>ja-JP</NeutralLanguage>
+    <PackageTags>Stormworks</PackageTags>
+    <Company />
   </PropertyGroup>
 
   <ItemGroup>

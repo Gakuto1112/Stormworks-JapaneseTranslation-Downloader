@@ -31,7 +31,7 @@ namespace Stormworks_Japanese_translation_downloader
             CheckLocal(directory_text_box.Text, false);
             GetData();
             CheckRemote();
-            if (CheckDirectory(directory_text_box.Text) == DirectoryStatus.VALID && File.Exists(directory_text_box.Text + "\\japanese.tsv") && File.Exists(directory_text_box.Text + "\\japanese.xml") && !Properties.Settings.Default.InstalledVersion.Equals(tagData[0].name))
+            if (CheckDirectory(directory_text_box.Text) == DirectoryStatus.VALID && File.Exists(directory_text_box.Text + "\\japanese.tsv") && File.Exists(directory_text_box.Text + "\\japanese.xml") && !Properties.Settings.Default.InstalledVersion.Equals(tagData[0].name) && !Properties.Settings.Default.InstalledVersion.Equals(""))
             {
                 AskUpdate();
             }
@@ -333,7 +333,7 @@ namespace Stormworks_Japanese_translation_downloader
                 remove_translation.IsEnabled = false;
                 check_update.IsEnabled = false;
                 DownloadFile();
-                MessageBox.Show("翻訳データがダウンロードされ、指定した位置にインストールされました。ゲーム内から言語設定を行ってください。");
+                MessageBox.Show("翻訳データがダウンロードされ、指定した位置にインストールされました。ゲーム内から言語設定を行ってください。", "インストール完了");
                 Properties.Settings.Default.InstalledVersion = tagData[0].name;
                 Properties.Settings.Default.Save();
                 generate_translation.IsEnabled = true;
@@ -396,7 +396,7 @@ namespace Stormworks_Japanese_translation_downloader
             remove_translation.IsEnabled = false;
             check_update.IsEnabled = false;
             DownloadFile();
-            MessageBox.Show("翻訳データがダウンロードされ、指定した位置にインストールされました。ゲーム内から言語設定を行ってください。");
+            MessageBox.Show("翻訳データがダウンロードされ、指定した位置にインストールされました。ゲーム内から言語設定を行ってください。", "インストール完了");
             Properties.Settings.Default.InstalledVersion = tagData[0].name;
             Properties.Settings.Default.Save();
             generate_translation.Content = "翻訳データ更新";
@@ -480,9 +480,13 @@ namespace Stormworks_Japanese_translation_downloader
             //更新確認ボタン
             GetData();
             CheckRemote();
-            if (CheckDirectory(directory_text_box.Text) == DirectoryStatus.VALID && File.Exists(directory_text_box.Text + "\\japanese.tsv") && File.Exists(directory_text_box.Text + "\\japanese.xml") && !Properties.Settings.Default.InstalledVersion.Equals(tagData[0].name))
+            if (CheckDirectory(directory_text_box.Text) == DirectoryStatus.VALID && File.Exists(directory_text_box.Text + "\\japanese.tsv") && File.Exists(directory_text_box.Text + "\\japanese.xml") && !Properties.Settings.Default.InstalledVersion.Equals(tagData[0].name) && !Properties.Settings.Default.InstalledVersion.Equals(""))
             {
                 AskUpdate();
+            }
+            else
+            {
+                MessageBox.Show("更新確認が完了しました。", "確認完了");
             }
         }
         private void translation_github_link_Click(object sender, RoutedEventArgs e)
