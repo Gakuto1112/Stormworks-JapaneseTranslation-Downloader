@@ -27,7 +27,26 @@ namespace Stormworks_Japanese_translation_downloader
             InitializeComponent();
             //ディレクトリの設定
             if (!Properties.Settings.Default.SelectDirectory.Equals("")) directory_text_box.Text = Properties.Settings.Default.SelectDirectory;
-            else directory_text_box.Text = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Stormworks\\data\\languages";
+            else
+            {
+                directory_text_box.Text = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Stormworks";
+                if (Directory.Exists(directory_text_box.Text))
+                {
+                    try
+                    {
+                        Directory.CreateDirectory(directory_text_box.Text + "\\data\\languages");
+                    }
+                    catch (UnauthorizedAccessException exception)
+                    {
+                        MessageBox.Show("権限がないため、翻訳データのディレクトリを生成できませんでした。以下のディレクトリを手動で生成して下さい。\n" + Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Stormworks\\data\\languages\nOKを押して続行します。", "エラー", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
+                    catch (PathTooLongException exception)
+                    {
+                        MessageBox.Show("パスが長過ぎるため、翻訳データのディレクトリを生成できませんでした。以下のディレクトリを手動で生成して下さい。\n" + Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Stormworks\\data\\languages\nOKを押して続行します。", "エラー", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
+                }
+            }
+            directory_text_box.Text += "\\data\\languages";
             CheckLocal(directory_text_box.Text, false);
             GetData();
             CheckRemote();
