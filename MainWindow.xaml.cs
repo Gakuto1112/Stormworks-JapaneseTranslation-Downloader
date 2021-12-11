@@ -522,7 +522,7 @@ namespace Stormworks_Japanese_translation_downloader
         }
         private void discord_link_Click(object sender, RoutedEventArgs e)
         {
-            Process.Start(new ProcessStartInfo("cmd", "/c start https://discord.gg/GBqesHHGBR") { CreateNoWindow = true });
+            Process.Start(new ProcessStartInfo("cmd", "/c start https://discord.gg/sMv9k8g") { CreateNoWindow = true });
         }
     }
 }
