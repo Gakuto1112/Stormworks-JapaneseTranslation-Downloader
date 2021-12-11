@@ -11,7 +11,7 @@
 ```
 C:\Users\user\AppData\Roaming\Stormworks\data\languages
 ```
-- 上記のディレクトリが存在しない場合は、ゲームをまだ一度も起動していない事が考えられます。一度ゲームを起動して下さい。
+- 起動時にゲームフォルダ内（~\Roaming\Stormworks）に翻訳データのフォルダがない場合は自動で生成されます。（**プレリリース2で変更**）
 - 「\data\languages」で終わるディレクトリでないと登録出来ません。
 ### 「翻訳データの生成」「翻訳データの更新」
 翻訳データを[GitHubのレポジトリ](https://github.com/Gakuto1112/Stormworks-JapaneseTranslation)からダウンロードして所定の位置に配置します。更新の場合は既存のファイルを新しいものに置き換えます。生成後はゲーム内の設定より、言語を変更して下さい。
