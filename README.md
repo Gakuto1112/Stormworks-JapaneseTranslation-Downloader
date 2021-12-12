@@ -1,8 +1,8 @@
 # Stormworks翻訳データダウンローダー
 このアプリケーションは、[Stormworks日本訳データ](https://github.com/Gakuto1112/Stormworks-JapaneseTranslation)を自動でダウンロードして所定位置にインストールするアプリケーションです。新しくインストール場合は勿論、新しいバージョンにデータを置き換える事も可能となっています。
 ## ツールのダウンロード
-[Releeases](https://github.com/Gakuto1112/Stormworks-JapaneseTranslation-Downloader/releases)より、最新バージョンのexeファイルをダウンロードして下さい。  
-このツールは.NET 5.0を使用しています。**お使いのコンピューターに.NET 5.0 Runtimeがインストールされている方はexeファイルを、インストールされていない方はzipファイルをダウンロードして下さい**（zipファイルはランタイムも含まれるためファイルサイズが大きくなっています）。どちらをダウンロードすれば良いか判らない場合はzipファイルをダウンロードして下さい。  
+[Releeases](https://github.com/Gakuto1112/Stormworks-JapaneseTranslation-Downloader/releases)より、最新バージョンのexeファイルをダウンロードして下さい。
+このツールは.NET 5.0を使用しています。**お使いのコンピューターに.NET 5.0 Runtimeがインストールされている方はexeファイルを、インストールされていない方はzipファイルをダウンロードして下さい**（zipファイルはランタイムも含まれるためファイルサイズが大きくなっています）。どちらをダウンロードすれば良いか判らない場合はzipファイルをダウンロードして下さい。
 【参考】[.NET 5.0 Runtimeのダウンロード](https://dotnet.microsoft.com/download/dotnet/5.0/runtime)
 ## ツールの使い方
 ![ツールの画面](/images/downloaderWindow.jpg)
@@ -28,7 +28,6 @@ C:\Users\user\AppData\Roaming\Stormworks\data\languages
 不具合の修正や機能の変更・追加等で更新版がリリースされる場合があります。その時は[DiscordのStormworks日本サーバー](https://discord.gg/GBqesHHGBR)や[私のTwitter](https://twitter.com/Gakuto1112)でお知らせする予定です。各自ダウンロードして古いものと置き換えて下さい。
 ## 注意事項
 ファイルをダウンロードした時点で以下の注意事項に同意したものとみなします。
-- ツールの二次配布（改変含む）は禁止です。
 - ツールに不具合が起こらないように確認はしていますが、このツールを使用して損害が発生した場合の責任は負いかねます。
 - 明らかな不具合や機能の提案がありましたら、[Issues](https://github.com/Gakuto1112/Stormworks-JapaneseTranslation-Downloader/issues)等でお知らせ下さい。
 - こういったアプリケーションの作成や配布は初めてなので思わぬ事が起きるかもしれません。ご了承下さい。
